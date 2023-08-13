@@ -1,7 +1,7 @@
 var jwt = require("jsonwebtoken");
-
+const JWT_SECRET = 'palabraSECRETA'
 function generarJWT(id) {
-  return jwt.sign({ id: id }, process.env.JWT_SECRET, {
+  return jwt.sign({ id: id },JWT_SECRET, {
     expiresIn: "30d",
   });
 }
