@@ -46,9 +46,9 @@ const { Server } = require("socket.io");
 // Crear un servidor de sockets y configurar opciones
 const io = new Server(servidor, {
   pingTimeout: 60000, // Configurar el tiempo máximo de espera de ping (opcional)
-  cors: {
-    origin: process.env.FRONTEND_URL, // Configurar la política CORS (permisos de origen)
-  },
+  // cors: {
+  //   origin: process.env.FRONTEND_URL, // Configurar la política CORS (permisos de origen)
+  // },
 });
 
 // Manejar eventos de conexión
